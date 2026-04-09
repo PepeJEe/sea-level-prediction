@@ -5,18 +5,6 @@ import numpy as np
 from scipy.stats import linregress
 
 def draw_plot():
-    # Read data from file
-
-    # Create scatter plot
-
-
-    # Create first line of best fit
-
-
-    # Create second line of best fit
-
-
-    # Add labels and title
 
     data = pd.read_csv("./boilerplate-sea-level-predictor-main/epa-sea-level.csv")
 
@@ -27,8 +15,6 @@ def draw_plot():
     mask = (x >= 2000) & (x <= x.max())
     x_1 = x[mask]
     y_1 = y[mask]
-
-        #print(data[x_1])
 
     years_extended = np.arange(x[0], 2051, 1)
     years_extended_2 = np.arange(x_1[0], 2051, 1)
